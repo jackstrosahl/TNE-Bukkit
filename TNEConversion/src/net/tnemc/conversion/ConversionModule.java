@@ -40,6 +40,7 @@ import net.tnemc.conversion.impl.TownyEco;
 import net.tnemc.conversion.impl.XConomy;
 import net.tnemc.conversion.impl.iConomy;
 import net.tnemc.conversion.impl.iConomy7;
+import net.tnemc.conversion.impl.ZawmgCurrency;
 import net.tnemc.core.TNE;
 import net.tnemc.core.commands.TNECommand;
 import net.tnemc.core.common.module.Module;
@@ -212,6 +213,9 @@ public class ConversionModule implements Module {
         break;
       case "xconomy":
         converter = new XConomy();
+        break;
+      case "zawmg":
+        converter = new ZawmgCurrency();
         break;
     }
     return converter;
